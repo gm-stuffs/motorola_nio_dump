@@ -1,0 +1,36 @@
+<xml>
+    <ctbk_version>20</ctbk_version>
+    <wifi_tx_pwr_mimo>
+          <!-- (10 plimit, unit 1/4 dB)2.4G tx0,2.4G tx1,5G TX0_B1,5G TX0_B2,5G TX0_B3,5G TX0_B4,,5G TX1_B1,5G TX1_B2,5G TX1_B3,5G TX1_B4-->
+        <Default index="0" >64,64,66,66,66,68,66,66,66,68</Default> <!--default, Max-->
+        <State1  index="1" >62,62,44,44,44,50,44,44,44,50</State1>  <!--WLAN + WWAN-->
+        <State2  index="2" >46,46,34,38,36,38,34,38,36,38</State2>  <!--DBS + WWAN-->
+        <State3  index="3" >64,64,66,66,66,68,66,66,66,68</State3>  <!--WLAN only, Hand Held(TX0)-->
+        <State4  index="4" >64,64,66,66,66,68,66,66,66,68</State4>  <!--DBS only, Hand Held(TX0)-->
+        <State5  index="5" >62,62,44,44,44,50,44,44,44,50</State5>  <!--WLAN + WWAN, Hand Held(TX0)-->
+        <State6  index="6" >46,46,34,38,36,38,34,38,36,38</State6>  <!--DBS + WWAN, Hand Held(TX0)-->
+        <State7  index="7" >48,48,20,22,16,28,20,22,16,28</State7>  <!--MHS/P2P NonDBS + WWAN-->
+        <State8  index="8" >24,24,20,22,16,28,20,22,16,28</State8>  <!--MHS/P2P DBS + WWAN--> 
+        <State9  index="9" >72,72,72,72,72,68,72,72,72,68</State9>  <!--WLAN only, At Head(Earpiece on)-->
+        <State10 index="10">72,72,72,72,72,68,72,72,72,68</State10> <!--DBS only, At Head(Earpiece on)-->
+        <State11 index="11">64,64,72,72,72,68,72,72,72,68</State11> <!--WLAN + WWAN, At Head(Earpiece on)-->
+        <State12 index="12">62,62,72,72,72,68,72,72,72,68</State12> <!--DBS + WWAN, At Head(Earpiece on)-->
+        <State13 index="13">72,72,44,44,34,44,44,44,34,44</State13> <!--WLAN only, Body Worn(OB5)--> 
+        <State14 index="14">52,52,34,34,28,36,34,34,28,36</State14> <!--DBS only, Body Worn(OB5)-->
+        <State15 index="15">48,48,22,22,14,28,22,22,14,28</State15> <!--WLAN + WWAN, Body Worn(OB5)-->
+        <State16 index="16">24,24,22,22,14,28,22,22,14,28</State16> <!--DBS + WWAN, Body Worn(OB5)-->
+    </wifi_tx_pwr_mimo>
+    <sar_sensors>
+        <sensor type="prox_front"           index="0">vcnl36866 Proximity Sensor Wakeup</sensor>
+        <sensor type="prox_back"            index="1">null</sensor>
+        <!--from back view-->
+        <sensor type="cap_bottom_center"    index="2">Moto CapSense Ch0</sensor>
+        <sensor type="cap_top_right"        index="3">Moto CapSense Ch2</sensor>
+        <sensor type="cap_top"              index="4">Moto CapSense Ch1</sensor>
+        <sensor type="cap_bottom_left"      index="5">null</sensor>
+    </sar_sensors>
+    <!--OB5 config: 5 = 0000101b (cap_bottom_center|cap_top)-->
+    <ob5_sensor_config>5</ob5_sensor_config>
+    <!--tx0 config: 0 = 00000000b (none)-->
+    <wifi_tx0_sensor_config>0</wifi_tx0_sensor_config>
+</xml>
