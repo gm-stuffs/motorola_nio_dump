@@ -1,0 +1,14 @@
+# user 12 S1RT32.41-20-16 ad550 release-keys
+- manufacturer: motorola
+- platform: kona
+- codename: nio
+- flavor: user
+- release: 12
+- id: S1RT32.41-20-16
+- incremental: ad550
+- tags: release-keys
+- fingerprint: motorola/nio_retail/nio:11/S1RT32.41-20-16/ad550:user/release-keys
+- is_ab: true
+- brand: motorola
+- branch: user-12-S1RT32.41-20-16-ad550-release-keys
+- repo: motorola_nio_dump
